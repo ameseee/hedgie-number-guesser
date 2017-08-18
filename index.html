@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Holt's Number Guesser</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1><span class="h1-number">Malachi's</span> Hedgehog Game</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2 class="step-1-heading"><span class="steps">Step 1: </span>Choose your range:</h2>
+        <form role="form">
+          <label for="user-min" class="grey">Minimum:
+            <input type="number" name="min" value="0" id="user-min" class="grey"/>
+          </label>
+
+          <label for="user-max" class="grey" >Maximum:
+            <input type="number" name="max" value ="100" id="user-max" class="grey"/>
+          </label>
+
+          <label for="submit-range-btn">
+            <input type="submit" name="next" id="submit-range-btn" value="next" />
+          </label>
+          <p id="min-max-error">Oops! Your minimum must be less than your maximum.</p>
+        </form>
+      </section>
+
+      <section id="step-2">
+        <div class="divider-dot"></div>
+        <!-- give those dot divs a class so that it's clear what is going on and to avoid any other styling issues -->
+        <h2 class="step-2-heading" ><span class="steps">Step 2: </span>Understand the Game<br /></h2>
+        <p class="goal">Your goal is to guess a random number between <span id="min">MIN</span> and <span id="max">MAX</span>. Once you correctly guess a number, you will level up - the minimum will decrease by 10 and the maximum will increase by 10.</p>
+        <button type="submit" name="button" id="ready-to-play">Play</button>
+      </section>
+
+      <section id="step-3">
+        <div></div>
+        <h2 class="step-3-heading"> <span class="steps">Step 3: </span>Time to Play!</h2>
+        <label for="user-input">
+          <input type="text" placeholder="Enter your guess" id="user-input" aria-required="true" >
+        </label>
+        <button class="small-btn" id="guess-btn" disabled >Guess</button>
+        <button class="small-btn" id="next-level-btn" disabled >Next Level</button>
+        <h3 id="current-range">The current range will appear here.</h3>
+        <h3 id="last-guess-text">Your last guess of:</h3>
+        <article class="num-hedgie-container">
+          <img id="hedgie-left" src="/Users/amyholt/mod2/hedgehog/hedgie1.jpg" alt="Image of adorable Hedgehog">
+          <p id="pink-number">...</p>
+          <img id="hedgie-right" src="/Users/amyholt/mod2/hedgehog/hedgie2.jpg" alt="Image of adorable Hedgehog">
+        </article>
+        <h3 id="feedback-text">You haven't guessed yet!</h3>
+        <button id="start-over" disabled>Start Over</button>
+      </section>
+
+    </main>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+    <script type="text/javascript" src="script.js"></script>
+  </body>
+</html>

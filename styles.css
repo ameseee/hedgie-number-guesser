@@ -1,0 +1,289 @@
+* {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+/*HEADER*/
+
+header {
+  background-color: #404041;
+  margin-bottom: 40px;
+  padding: 8px;
+}
+
+h1 {
+  color: #e6e7e8;
+  font-size: 60px;
+  text-align: center;
+}
+
+.h1-number {
+  color: #ed458b;
+  font-weight: 700;
+}
+
+
+/*MAIN & REUSABLE*/
+
+main {
+  display: block;
+  margin: auto;
+  width: 45%;
+}
+
+.steps {
+  color: #ed458b;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+div {
+  background-color: #ed458b;
+  border-radius: 10px;
+  height: 20px;
+  margin: auto;
+  margin-bottom: 45px;
+  width: 20px;
+}
+
+h2 {
+  color: #404041;
+  margin-bottom: 20px;
+}
+
+/*STEP 1 - GET MIN AND MAX FORM*/
+
+.step-1-heading {
+  margin-bottom: 10px;
+}
+
+form {
+  margin-bottom: 35px;
+}
+
+label {
+  color: #404041;
+  font-size: 20px;
+}
+
+#user-min,
+#user-max {
+  display: inline-block;
+  margin-right: 15px;
+  outline: none;
+  width: 78px;
+}
+
+#user-min:focus,
+#user-max:focus {
+  outline-color: #ed458b;
+  outline-style: auto;
+}
+
+#submit-range-btn {
+  background-color: #929497;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  display: inline-block;
+  font-size: 20px;
+  letter-spacing: 1.15px;
+  margin: 30px auto 30px 40px;
+  outline: none;
+  padding: 5px 20px;
+  text-transform: uppercase;
+  width: 110px;
+}
+
+#submit-range-btn:hover {
+  background-color: #ed458b;
+  cursor: pointer;
+}
+
+#submit-range-btn:disabled {
+  background-color: #d0d2d3;
+}
+
+#submit-range-btn:disabled:hover {
+  cursor: default;
+}
+
+.grey-out-text {
+  color: #d0d2d3;
+}
+
+#min-max-error {
+  display: none;
+  font-size: 20px;
+  color: #ed458b;
+}
+
+/*STEP 2 - DIRECTIONS*/
+
+#step-2 {
+  display: none;
+}
+
+span {
+  font-weight: 700;
+}
+
+.goal {
+  color: #404041;
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 60px;
+  padding-right: 10px;
+  text-align: left;
+  width: 68%;
+}
+
+#ready-to-play {
+  letter-spacing: 1.15px;
+  margin-left: 40px;
+  text-transform: uppercase;
+  width: 110px;
+}
+
+#ready-to-play:disabled:hover {
+  cursor: default;
+}
+
+/*STEP 3 - USER GUESS SECTION*/
+
+#step-3 {
+  visibility: hidden;
+}
+
+input {
+  color: #404041;
+  display: block;
+  font-size: 20px;
+  margin: auto;
+  padding: 5px;
+  width: 100%;
+}
+
+button {
+  background-color: #929497;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  outline: none;
+  padding: 5px 20px;
+}
+
+button:disabled,
+button:disabled:hover {
+  background-color: #d0d2d3;
+  cursor: default;
+}
+
+button:hover {
+  background-color: #ed458b;
+}
+
+.small-btn {
+  width: 45%;
+  margin-top: 25px;
+}
+
+#user-input {
+  outline: none;
+}
+
+#user-input:focus {
+  outline-color: #ed458b;
+  outline-style: auto;
+}
+
+#guess-btn {
+  margin-right: 4.5%;
+}
+
+#next-level-btn {
+  margin-left: 4.5%;
+}
+
+.change-to-pink {
+  background-color: #ed458b;
+}
+
+.display-range-pink {
+  font-size: 40px;
+}
+
+#start-over {
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+/*STEP 3 - INFO GIVEN TO USER*/
+
+h3 {
+  color: #404041;
+  font-size: 23px;
+  height: 32px;
+  margin: 5px;
+  text-align: center;
+}
+
+#current-range {
+  font-size: 20px;
+  margin-top: 20px;
+
+}
+
+#last-guess-text {
+  margin-bottom: 0;
+  margin-top: 15px
+}
+
+.num-hedgie-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 150px;
+}
+
+#hedgie-left {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  margin-top: 25px;
+  margin-right: 20px;
+  display: inline-block;
+  /*visibility: hidden;*/
+  display: none;
+}
+
+#pink-number {
+  color: #ed458b;
+  font-size: 100px;
+  height: 163px;
+  text-align: center;
+  display: inline-block;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#hedgie-right {
+  width: 115px;
+  height: 115px;
+  border-radius: 50%;
+  margin-top: 25px;
+  margin-left: 20px;
+  display: inline-block;
+  /*visibility: hidden;*/
+  display: none;
+}
+
+#feedback-text {
+  margin-bottom: 30px;
+}
